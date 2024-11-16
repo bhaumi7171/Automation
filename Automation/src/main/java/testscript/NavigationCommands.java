@@ -12,7 +12,7 @@ public class NavigationCommands extends Base {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 NavigationCommands navigation=new NavigationCommands();
-navigation.IntialiseBrowser();
+navigation.intialiseBrowser();
 navigation.navigateCommands();
 	}
 

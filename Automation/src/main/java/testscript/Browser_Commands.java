@@ -14,7 +14,7 @@ public class Browser_Commands extends Base {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Browser_Commands browsercommands=new Browser_Commands();
-browsercommands.IntialiseBrowser();
+browsercommands.intialiseBrowser();
 browsercommands.browserCommands();
 	}
 
