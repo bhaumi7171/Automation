@@ -14,6 +14,7 @@ public class NavigationCommands extends Base {
 NavigationCommands navigation=new NavigationCommands();
 navigation.intialiseBrowser();
 navigation.navigateCommands();
+navigation.quitClose();
 	}
 
 }

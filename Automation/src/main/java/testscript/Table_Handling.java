@@ -18,9 +18,11 @@ public void rowTable()
 	WebElement tablerow=driver.findElement(By.xpath("//table[@id='dtBasicExample']/tbody/tr[3]"));
 	WebElement tablerow1=driver.findElement(By.xpath("//table[@id='dtBasicExample']/tbody/tr[2]"));
 	//WebElement tablerow0=driver.findElement(By.xpath("//table[@id='dtBasicExample']/thead/tr[0]"));
+	WebElement tablerow0=driver.findElement(By.xpath("//th[@class='th-sm sorting_disabled']"));  //tablehead
+	
 	System.out.println(tablerow.getText());
 	System.out.println(tablerow1.getText());
-	//System.out.println(tablerow0.getText());
+	System.out.println(tablerow0.getText());
 }
 public void selectParticular()
 {

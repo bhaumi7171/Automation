@@ -7,15 +7,16 @@ import org.openqa.selenium.support.ui.Select;
 public class Drop_Down extends Base {
 	public void dropDown()
 	{
-		driver.navigate().to("https://selenium.qabible.in/select-input.php");
-	/*WebElement dropdown1=driver.findElement(By.xpath("//a[@href='select-input.php']"));
-				dropdown1.click();*/
+		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
+	WebElement dropdown1=driver.findElement(By.xpath("//a[@href='select-input.php']"));
+				dropdown1.click();
 		WebElement dropdownselect=driver.findElement(By.xpath("//select[@id='single-input-field']"));
+		//dropdownselect.click();
 		Select drop=new Select(dropdownselect);
-		//drop.selectByVisibleText("Red");
-		//drop.selectByVisibleText("Green");//select by visible text
-		//drop.selectByIndex(2);
-		drop.selectByValue("Yellow");
+		drop.selectByVisibleText("Red");
+		drop.selectByVisibleText("Green");//select by visible text
+		drop.selectByIndex(2); //index value
+		drop.selectByValue("Yellow");  //value showing in as text
 		
 	}
 

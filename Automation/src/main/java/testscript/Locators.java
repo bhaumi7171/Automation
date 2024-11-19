@@ -47,6 +47,7 @@ public void cssSelector()
 	
 //fourth combination tag.class[attribute=value]
 	WebElement messagefieldcss2=driver.findElement(By.cssSelector("input.form-control[id=single-input-field]"));
+	WebElement messagefieldcss3=driver.findElement(By.cssSelector("button.navbar-toggler[type=button]"));
 }
 public void relativeXpath()
 	
@@ -72,6 +73,9 @@ public void textXpath()
 	//tagname[text()='value']
 	WebElement text=driver.findElement(By.xpath("//button[text()='Show Message']"));
 	WebElement text1=driver.findElement(By.xpath("//button[text()='Get Total']"));
+	WebElement text2=driver.findElement(By.xpath("//label[text()='Enter Message']"));
+	WebElement text3=driver.findElement(By.xpath("//label[text()='Enter value A']"));
+	WebElement text4=driver.findElement(By.xpath("//label[text()='Enter value B']"));
 }
 public void axes()
 {

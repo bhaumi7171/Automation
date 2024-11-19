@@ -26,7 +26,7 @@ public void fields()
 	WebElement checkbox=driver.findElement(By.xpath("//label[@for='invalidCheck']"));
 	checkbox.click();
 	WebElement submit=driver.findElement(By.xpath("//button[@class='btn btn-primary']"));
-	submit.click();
+	submit.click(); 
 }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
