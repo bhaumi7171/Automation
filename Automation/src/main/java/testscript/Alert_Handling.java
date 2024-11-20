@@ -9,7 +9,7 @@ public class Alert_Handling extends Base {
 		driver.navigate().to("https://selenium.qabible.in/bootstrap-alert.php");
 		WebElement alerth=driver.findElement(By.xpath("//a[@href='javascript-alert.php']"));
 		alerth.click();
-		WebElement alerth1=driver.findElement(By.xpath("//button[@class='btn btn-success']"));
+		WebElement alerth1=driver.findElement(By.xpath("c"));
 		alerth1.click();
 		
 		driver.switchTo().alert().accept();

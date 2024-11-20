@@ -18,6 +18,8 @@ public class Window  {
 			windowhand.click();
 			WebElement windowhand1=driver.findElement(By.xpath("//h1[text()='LOGIN PORTAL']"));
 			windowhand1.click();
+			WebElement windowhand2=driver.findElement(By.xpath("//h1[text()='BUTTON CLICKS']"));
+			 windowhand2.click();
 			String parent=driver.getWindowHandle();
 			System.out.println("Parent Window" +parent);
 			Set<String> allwindow=driver.getWindowHandles();
@@ -30,8 +32,8 @@ public class Window  {
 					System.out.println(" Except parent from child window"+temp);
 					driver.switchTo().window(temp);
 					System.out.println(driver.getTitle());
-					title=driver.getTitle();
-				}
+					title=driver.getTitle(); //???
+				} 
 				if(title.equals("WebDriver | Login Portal"))
 				{
 					WebElement username=driver.findElement(By.xpath("//input[@id='text']"));
@@ -55,6 +57,14 @@ public class Window  {
 					contactus3.sendKeys("Hello");
 					
 					
+				}
+				if(title.equals("WebDriver | Button Clicks"))
+				{
+					WebElement click1=driver.findElement(By.xpath("//span[@id='button1']"));
+					click1.click();
+					//WebElement click2=driver.findElement(By.xpath("//h4[text()='Congratulations!']"));
+					//click2.click();
+					driver.switchTo().alert().accept();
 				}
 			}
 	}
