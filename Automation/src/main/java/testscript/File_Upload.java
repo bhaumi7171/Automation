@@ -42,7 +42,7 @@ public void directenterSendkeys()
 	//fileup.click();
 	fileup.sendKeys("C:\\Users\\binoo\\Downloads\\Binoop _ Interior Designer (1).pdf");
 }
-/*
+
 public void checksite()
 {
 	driver=new ChromeDriver();
@@ -51,14 +51,15 @@ public void checksite()
 	WebElement fileup=driver.findElement(By.xpath("//button[@id='select-file-button']"));
 	fileup.click();
 	fileup.sendKeys("C:\\Users\\binoo\\Downloads\\Binoop _ Interior Designer (1).pdf");
-}*/
+}
 
 	public static void main(String[] args) throws AWTException {
 		// TODO Auto-generated method stub
 		File_Upload fileuploadd=new File_Upload();
-		//fileuploadd.fileupload();
-		fileuploadd.directenterSendkeys();
+		fileuploadd.fileupload();
+		//fileuploadd.directenterSendkeys();
 		//fileuploadd.checksite();
 	}
+	
 
 }
